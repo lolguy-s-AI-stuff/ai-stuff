@@ -3,6 +3,7 @@
     "makefile.loggingLevel": "Debug",
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
-        "*.ipp": "cpp"
+        "*.ipp": "cpp",
+        "atomic": "cpp"
     }
 }
