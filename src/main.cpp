@@ -71,15 +71,19 @@ int main()
 
         int weight[3][4][4]{
         {{255, 0, 0, 0}, {255, 0, 0, 0}, {255, 0, 0, 0}, {0, 0, 0, 0}},
-    	{{255, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}},
-    	{{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}
+        {{255, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}},
+        {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}
         };
-    int bias[3][4]{
-    	{0, 0, 0, 0},
-        {0, 0, 0, 0},
-        {0, 0, 0, 0}
-    };
-
+        int bias[3][4]{
+        	{0, 0, 0, 0},
+            {0, 0, 0, 0},
+            {0, 0, 0, 0}
+        };
+        unsigned char traindata[3][4]{
+            {255,0,0,255},
+            {0,255,0,32},
+            {0,0,255,8}
+        };
         AI ai;
         while(!glfwWindowShouldClose(window)){
                 glClear(GL_COLOR_BUFFER_BIT);
@@ -109,7 +113,7 @@ int main()
             ImGui::LabelText("","Output: %i",out[0]);
 
             if(ai.training){
-                ai.train();
+                ai.train(3,(unsigned char**)traindata);
                 for (size_t i = 0; i < 2; i++)
                 {
                     for (size_t j = 0; j < 4; j++)
