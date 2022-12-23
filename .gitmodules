@@ -1,3 +1,6 @@
 [submodule "lib/glfw"]
 	path = lib/glfw
 	url = https://github.com/glfw/glfw
+[submodule "lib/libcai"]
+	path = lib/libcai
+	url = https://github.com/lolguy-s-AI-stuff/libcai
