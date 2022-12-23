@@ -10,7 +10,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <shader.h>
-#include <AI/AI.h>
+#include <AI.h>
 
 
 GLFWwindow* InitWindow()
