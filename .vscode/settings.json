@@ -4,6 +4,10 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "*.ipp": "cpp",
-        "atomic": "cpp"
+        "atomic": "cpp",
+        "chrono": "cpp",
+        "random": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp"
     }
 }

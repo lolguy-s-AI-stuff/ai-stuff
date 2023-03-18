@@ -1,3 +1,4 @@
+-fix the damn thing
 -make it more general
 -optimize the training experience
 -separate the machine learning into a library
